@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    background-image: url("https://source.unsplash.com/1600x900/?city,weather");
+    background-repeat: no-repeat;
+}
+.card{
+    background: black;
+    color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 2em;
+    margin: 1em;
+    transition:all linear 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.search-bar{
+    border-radius: 50px;
+    color: white;
+    background: #7c7c7c2b;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    width: 100%;
+    border: none;
+}
+
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    background: grey ;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+h1.temp{
+    margin-bottom: 0.5em;
+    margin: 0;
+
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+     
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
